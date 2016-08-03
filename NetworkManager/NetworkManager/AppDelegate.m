@@ -10,7 +10,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[NetworkManager sharedNetworkManager] requestWithTarget:self completeHandler:@selector(requestFinished:) errorHandler:@selector(requestError)];
+    [[NetworkManager sharedNetworkManager] requestWithTarget:self completeHandler:@selector(requestFinished:) errorHandler:@selector(requestError:)];
     return YES;
 }
 
